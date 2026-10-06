@@ -3,8 +3,8 @@ name: First workflow1
 
 on:
    push:
-       branches:
-            - main
+        workflow_dispatch:
+            
 
 #create jobs
 jobs: 
