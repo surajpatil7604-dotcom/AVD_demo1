@@ -1,10 +1,14 @@
-name: First workflow1
+
+#pipeline name /workflow name 
+name: First workflow
 #set trigger
 
 on:
+  
    push:
-        workflow_dispatch:
-            
+       branches:
+            - main
+   workflow_dispatch:
 
 #create jobs
 jobs: 
@@ -17,4 +21,3 @@ jobs:
             # step2
             - name: print hello message 
               run: echo 'hello message '
-            
